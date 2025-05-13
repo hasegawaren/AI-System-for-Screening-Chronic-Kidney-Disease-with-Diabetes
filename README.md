@@ -48,6 +48,7 @@ This application simulates a clinical decision support tool, providing:
 - Implemented backend logic in Flask (Python) to: Load and use the .joblib model, Process form inputs and Calculate eGFR and classify kidney stage
 - Rendered results dynamically using Jinja2 templates
 - Supported academic publication (but did not train the ML model)
+
 ⚠️ Note: The machine learning model (selected.joblib) was provided and not trained in this repository.
 
 ---
