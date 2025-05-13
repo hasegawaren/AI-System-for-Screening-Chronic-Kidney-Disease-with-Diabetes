@@ -34,9 +34,9 @@ This application simulates a clinical decision support tool, providing:
 | **Model**    | Pre-trained `.joblib` file (not trained in this project) |
 | **Tools**    | Git, VS Code                        |
 
+---
 
 ## Getting Started
-
 ### 1. Clone this repo
 git clone https://github.com/hasegawaren/AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes.git
 
@@ -48,12 +48,11 @@ python app.py
 ### 4. Open browser
 Go to http://localhost:5000
 
+---
+
 ## My Role
 - Developed frontend input form using HTML + CSS
-- Implemented backend logic in Flask (Python) to:
-    Load and use the .joblib model
-    Process form inputs
-    Calculate eGFR and classify kidney stage
+- Implemented backend logic in Flask (Python) to: Load and use the .joblib model, Process form inputs and Calculate eGFR and classify kidney stage
 - Rendered results dynamically using Jinja2 templates
 - Supported academic publication (but did not train the ML model)
 ⚠️ Note: The machine learning model (selected.joblib) was provided and not trained in this repository.
