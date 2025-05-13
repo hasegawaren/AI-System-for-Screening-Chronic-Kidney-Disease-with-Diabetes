@@ -38,7 +38,6 @@ This application simulates a clinical decision support tool, providing:
 ## Getting Started
 
 ### 1. Clone this repo
-```bash
 git clone https://github.com/hasegawaren/AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes.git
 cd AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes
 ### 2. Install dependencies (if needed)
