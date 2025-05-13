@@ -39,15 +39,13 @@ This application simulates a clinical decision support tool, providing:
 
 ### 1. Clone this repo
 git clone https://github.com/hasegawaren/AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes.git
+
 cd AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes
 ### 2. Install dependencies (if needed)
-```bash
 pip install flask numpy joblib
 ### 3. Run the app
-```bash
 python app.py
 ### 4. Open browser
-```bash
 Go to http://localhost:5000
 
 ## My Role
