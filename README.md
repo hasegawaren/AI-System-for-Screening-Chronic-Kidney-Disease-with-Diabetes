@@ -33,6 +33,33 @@ This application simulates a clinical decision support tool, providing:
 | **Backend**  | Python, Flask, NumPy, Joblib        |
 | **Model**    | Pre-trained `.joblib` file (not trained in this project) |
 | **Tools**    | Git, VS Code                        |
+
+
+## Getting Started
+
+### 1. Clone this repo
+```bash
+git clone https://github.com/hasegawaren/AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes.git
+cd AI-System-for-Screening-Chronic-Kidney-Disease-with-Diabetes
+### 2. Install dependencies (if needed)
+```bash
+pip install flask numpy joblib
+### 3. Run the app
+```bash
+python app.py
+### 4. Open browser
+```bash
+Go to http://localhost:5000
+
+## My Role
+- Developed frontend input form using HTML + CSS
+- Implemented backend logic in Flask (Python) to:
+    Load and use the .joblib model
+    Process form inputs
+    Calculate eGFR and classify kidney stage
+- Rendered results dynamically using Jinja2 templates
+- Supported academic publication (but did not train the ML model)
+⚠️ Note: The machine learning model (selected.joblib) was provided and not trained in this repository.
  
 ![image](https://github.com/user-attachments/assets/b6f80770-897b-4a07-a540-9db3ef1cab6a)
 ![image](https://github.com/user-attachments/assets/5248ffbb-23ba-414f-8c74-94a38522d884)
