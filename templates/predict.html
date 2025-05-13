@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="predict.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .container {
+      background: rgba(201, 225, 253, 1);
+      justify-items: center;
+      padding: 20px;
+      width: 1300px;
+      height: 790px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 80px;
+      position: relative;
+      left: 90px;
+    }
+
+    nav {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    ul {
+      display: flex;
+      gap: 3rem;
+      color: black;
+    }
+
+    li {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      gap: 10px;
+      color: black;
+      position: relative;
+      right: 170px;
+      top: 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: large;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    ul li a:hover {
+      color: #868686;
+      text-shadow: #777373;
+    }
+
+    .logo {
+      position: relative;
+      top: 5px;
+      left: 150px;
+    }
+
+    .nav1 {
+      position: relative;
+      top: 300px;
+    }
+
+    .patient {
+      background: white;
+      width: 254px;
+      height: 99px;
+      position: absolute;
+      top: 40px;
+      left: 60px;
+      border-radius: 20px;
+      box-shadow: 0 4px 4px rgb(144, 143, 143);
+    }
+
+    .form {
+      width: 226px;
+      height: 636px;
+      position: absolute;
+      top: 30px;
+      left: 400px;
+      margin-left: 20px;
+      font-weight: bold;
+      line-height: 3.75;
+      font-family: Arial, sans-serif;
+
+    }
+
+    .input {
+      width: 608px;
+      height: 618px;
+      position: absolute;
+      top: 30px;
+      left: 650px;
+      margin-left: 20px;
+      line-height: 3.75;
+      border-radius: 20px;
+    }
+
+    .inputstyle {
+      width: 560px;
+      padding: 10px;
+      border-radius: 10px;
+      outline: none;
+      border: 1px;
+    }
+
+    .text {
+      position: absolute;
+      top: 1020px;
+      left: 760px;
+      transform: translateX(-50%);
+      font-style: italic;
+      color: rgb(104, 104, 104);
+      font-size: large;
+      font-weight: 300;
+    }
+
+    .btn {
+      height: 42px;
+      width: 130px;
+      border-radius: 20px;
+      position: absolute;
+      top: 880px;
+      left: 0px;
+      transform: translateX(-50%);
+      font-weight: bold;
+      background: white;
+      box-shadow: 0 4px 4px rgb(144, 143, 143);
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .btn1 {
+      height: 30px;
+      width: 100px;
+      border-radius: 20px;
+      position: absolute;
+      top: 740px;
+      left: 0px;
+      transform: translateX(-50%);
+      font-weight: bold;
+      background: rgb(0, 0, 0);
+      box-shadow: 0 4px 4px rgb(144, 143, 143);
+      border: 1px solid rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .text1 {
+      font-weight: bold;
+      position: absolute;
+      top: 25px;
+      left: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    .text2 {
+      font-weight: bold;
+      position: absolute;
+      top: 55px;
+      left: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer {
+      height: 100px;
+    }
+
+    .dropdown {
+      width: 200px;
+      border-radius: 20px;
+    }
+
+    .dropdown select {
+      width: 100%;
+      padding: 7.5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+  </style>
+
+  <nav>
+    <Image class="logo" src="/static/logonav.png" alt="Logo" width={230} height={36} />
+    <ul class="ul">
+      <li class="li"><a href="/">Home</a></li>
+      <li class="li"><a href="/predict">DKDPredictor</a></li>
+    </ul>
+  </nav>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="patient">
+      <div class="text1">Name: Phichittra Jeenduang</div>
+      <div class="text2">ID: 64109010353</div>
+    </div>
+
+    <div class="form">
+      <div>1. sex</div>
+      <div>2. Age (year)</div>
+      <div>3. Diabetes duration (year)</div>
+      <div>4. BMI (kg/m2)</div>
+      <div>5. SBP (mmHg)</div>
+      <div>6. DBP (mmHg)</div>
+      <div>7. HbA1c (%)</div>
+      <div>8. FBG (mmol/L)</div>
+      <div>9. TG (mmoll)</div>
+      <div>10. HDLC (mmoll)</div>
+      <div>11. LDLC (mmoll)</div>
+      <div>12. serum_creatinine</div>
+    </div>
+
+    <form method="POST" class="input" action="/result">
+      <div class="dropdown">
+        <select name="sex">
+          <option value="option1">Male</option>
+          <option value="option2">Female</option>
+        </select>
+      </div>
+
+      <input class="inputstyle" name="age" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="diabeatsduration" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="bmi" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="sbp" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="dbp" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="hba1c" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="fbd" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="tg" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="hdlc" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="ldlc" type="text" placeholder="Enter Value...">
+      <input class="inputstyle" name="serum_creatinine" type="text" placeholder="Enter Value...">
+      <input class="btn" type="submit" value='Predict'>
+      <input class="btn1" type="reset" value="Reset">
+  </div>
+  <div class="text">Please check the information before predict</div>
+  </form>
+
+  </div>
+</body>
+<footer>
+  <div class="footer"></div>
+</footer>
+
+</html>

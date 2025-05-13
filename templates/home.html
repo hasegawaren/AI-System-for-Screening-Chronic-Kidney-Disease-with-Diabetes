@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 100px;
+        }
+
+        .textContainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            justify-content: center;
+            position: relative;
+            left: 100px;
+        }
+
+        .title {
+            position: relative;
+            left: 10px;
+        }
+
+        .desc {
+            font-size: 20px;
+            width: 550px;
+            height: 50px;
+            position: relative;
+            left: 10px;
+            bottom: 85px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px;
+            min-width: 130px;
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            position: relative;
+            right: 530px;
+            bottom: 50px;
+        }
+
+        .button:first-child {
+            background-color: rgb(20, 54, 108);
+            color: white;
+            box-shadow: 0 4px 4px rgb(144, 143, 143);
+        }
+
+        .imgContainer {
+            width: 200px;
+            height: auto;
+            position: relative;
+            justify-items: center;
+            right: 600px;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+                position: inherit;
+                right: 100px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .title {
+                font-size: 64px;
+            }
+        }
+
+        nav {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            gap: 3rem;
+            color: black;
+        }
+
+        li {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            gap: 10px;
+            color: black;
+            position: relative;
+            right: 150px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-size: large;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        ul li a:hover {
+            color: #868686;
+            text-shadow: #777373;
+        }
+
+        .logo {
+            position: relative;
+            top: 5px;
+            left: 150px;
+        }
+
+        .nav1 {
+            position: relative;
+            top: 300px;
+        }
+
+        .footer {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="/static/logonav.png" alt="Logo" width="230" height="36" />
+        <ul class="ul">
+            <li class="li"><a href="/">Home</a></li>
+            <li class="li"><a href="/predict">DKDPredictor</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="textContainer">
+            <h1 class="title">"Hello!, Medical personnel"</h1>
+            <p class="desc">
+                We'd like to introduce our website that offers prediction services for chronic kidney disease in
+                diabetic patients. Our platform provides quick and convenient predictions based on standardized data and
+                user-friendly tools. By inputting patient information and risk factors, we can offer accurate guidance
+                for diagnosis and management to reduce the risk of chronic kidney disease efficiently
+            </p>
+            <div class="buttons">
+                <a src="/static/illustration.png" href="/predict"><button class="button">DKD Predictor</button></a>
+            </div>
+        </div>
+        <div class="imgContainer">
+            <img class="img" src="/static/illustration.png" alt="Logo" />
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+
+</html>
